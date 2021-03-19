@@ -40,14 +40,14 @@ namespace HomeWork8
             Console.ReadLine();
 
 
-            Queue<StudentNew> studentsNew = new Queue<StudentNew>();
-            studentsNew.Enqueue(new StudentNew() { Name = "Lera" });
+            Queue<Student> studentsNew = new Queue<Student>();
+            studentsNew.Enqueue(new Student() { Name = "Lera" });
 
-            studentsNew.Enqueue(new StudentNew() { Name = "Alla" });
+            studentsNew.Enqueue(new Student() { Name = "Alla" });
 
-            studentsNew.Enqueue(new StudentNew() { Name = "Vika" });   
+            studentsNew.Enqueue(new Student() { Name = "Vika" });   
 
-            foreach (StudentNew sn in studentsNew)
+            foreach (Student sn in studentsNew)
             {
                 Console.WriteLine("Task from " + sn.Name + " is received");
             }
@@ -56,13 +56,13 @@ namespace HomeWork8
 
 
             
-            StudentNew person1 = studentsNew.Dequeue(); 
+            Student person1 = studentsNew.Dequeue(); 
             Console.WriteLine(person1.Name + " got a cup of coffee");
 
-            StudentNew person2 = studentsNew.Dequeue();
+            Student person2 = studentsNew.Dequeue();
             Console.WriteLine(person2.Name + " got a cup of coffee");
 
-            StudentNew person3 = studentsNew.Dequeue();
+            Student person3 = studentsNew.Dequeue();
             Console.WriteLine(person3.Name + " got a cup of coffee");
 
             Console.ReadLine();
@@ -73,11 +73,7 @@ namespace HomeWork8
     {
         public string Name { get; set; }
     }
-
-    class StudentNew
-    {
-        public string Name { get; set; }
-    }
+        
 }
     
 
